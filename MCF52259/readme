@@ -1,0 +1,18 @@
+5-31-2018  This is a DSP toolbox project I coded for the NXP (Freescale) MCF52259 Coldfire microcontroller.  I used C for this project.
+I also used the EZearth LCD for this project.  All the required drivers are written to communicate between these two devices.  I also coded
+the required drivers for displaying signals on the screen.
+
+The main idea for this project is to design a DSP filter using LabVIEW and upload the coefficients to the microcontroller.  The
+microcontroller will then take these coefficients and convolute them with the captured raw signal.  Essentially, we can revise our filter
+using LabVIEW and upload it to the microcontroller and see the response.  It is a flexible solution to adjust the filter to any signal
+that we are working with.  So far, I have only used a signal from a signal generator.  However, I can forsee that any signal
+from an antenae would do.
+
+As of today, the device can do an FIR Low and Band pass filter.  The signal frequency is limited to below 20 kHZ.  There is no anti alias
+filter at the front end.  This will cause aliasing at higher frequency.  This project has all the infrastructure codes ready.  More codes 
+can be added to make the application more robust.  For example, we can add highpass and nopass filters.  We can also start our work with
+multirate sampling DSP work.  The uniqueness about this project is that we can design and redesign our DSP filters and see an 
+immidiate response.  We can then adjust our design for a closer solution.
+
+I used CodeWarrior 7 to code the project.  I also used LabVIEW 7 to design the filter design.  I have uploaded all the required codes here.
+There are pictures showing the hardware.
