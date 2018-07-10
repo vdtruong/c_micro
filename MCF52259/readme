@@ -12,7 +12,7 @@ As of today, the device can do an FIR Low and Band pass filter.  The signal freq
 filter at the front end.  This will cause aliasing at higher frequency.  This project has all the infrastructure codes ready.  More codes 
 can be added to make the application more robust.  For example, we can add highpass and nopass filters.  We can also start our work with
 multirate sampling DSP work.  The uniqueness about this project is that we can design and redesign our DSP filters and see an 
-immidiate response.  We can then adjust our design for a closer solution.
+immediate response.  We can then adjust our design for a closer solution.
 
 I used CodeWarrior 7 to code the project.  I also used LabVIEW 7 to design the filter design.  I have uploaded all the required codes here.
 There are pictures showing the hardware.
